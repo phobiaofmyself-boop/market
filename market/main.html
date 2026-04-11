@@ -1,3 +1,4 @@
+<!-- https://www.dogpang.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +35,7 @@
             font-size:14px;
         }
         .hero{
-            background:white;
+            background:beige;
             padding:60px;
             text-align:center;
             border-bottom:1px solid#ddd;
@@ -55,6 +56,8 @@
             border-radius:6px;
             overflow:hidden;
             transition:0.2s;
+            display: flex;
+            flex-direction: column;
         }
         .card:hover{
             transform:translateY(-3px)
@@ -66,6 +69,27 @@
         }
         .card-body{
             padding:15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 14px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: auto;
+            align-self: flex-end;
+            border-radius: 4px;
+        }
+        .footer{
+            margin-top: 60px;
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -131,7 +155,42 @@
                     <a class="btn" href="">View</a>
                 </div>
             </div>
+            <div class="card">
+                <img src="\img\sno_center01_202503211711066.jpg">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="\img\sno_center01_202509181716224.jpg">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="\img\sno_center01_2025052813563810.jpg">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="\img\goodsno_center01_2025110618463811.jpg">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="">View</a>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="footer">
+        Tail Market Demo Store
     </div>
 </body>
 </html>
