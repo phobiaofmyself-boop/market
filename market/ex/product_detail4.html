@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        header{
+            background-color: black;
+            color: white;
+            padding:15px 40px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .card{
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img{
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 14px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: auto;
+            align-self: flex-end;
+            border-radius: 4px;
+        }
+        .footer{
+            margin-top: 60px;
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 메뉴 260404 -->
+        <div class="nav">
+            <!-- 로고 260404 -->
+            <div class="logo">
+                <img src="\img\logo.png" width = "100px">
+                </div>
+                <!-- 내비 영역 메뉴 -->
+                <div class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="category.html">Category</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="login.html">Login</a>
+                </div>
+            
+        </div>
+    </header>
+    <div class="grid">
+        <div class="card">
+            <img src="\img\애견용품 (4).png">
+        </div>
+        <div class="card">
+            <h1>부들부들 전상품 할인</h1>
+            <p>2,900원~</p>
+            <a class="btn" href="">구매</a>
+        </div>
+    </div>
+    <div class="footer">
+        Tail Market Demo Store
+    </div>
+</body>
+</html>

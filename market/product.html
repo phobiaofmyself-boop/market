@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        header{
+            background-color: black;
+            color: white;
+            padding: 15px 40px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .footer{
+            margin-top: 60px;
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+            }
+        .container{
+            width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 14px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: auto;
+            align-self: flex-end;
+            border-radius: 4px;
+        }
+        .product-layout{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: white;
+            padding: 40px;
+            border: 1px solid #ddd;
+        }
+        .product-layout img{
+            width: 100%;
+        }
+        .card{
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover{
+            transform: translateY(-3px)
+        }
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 메뉴 260404 -->
+        <div class="nav">
+            <!-- 로고 260404 -->
+            <div class="logo">
+                <img src="\img\logo.png" width = "100px">
+                </div>
+                <!-- 내비 영역 메뉴 -->
+                <div class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="category.html">Category</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="login.html">Login</a>
+                </div>
+            
+        </div>
+    </header>
+
+    <!-- 상품 소개 260425 -->
+    <div class="container">
+        <div class="product-layout">
+            <img src="\img\애견용품.png">
+            <div>
+                <!-- 상품명 영역 -->
+                <h2>포켄스 카누들 필로팩</h2>
+                <!-- 상품 가격 영역 -->
+                <p>33,000원~</p>
+                 <!-- 상품 상세 설명 영역 -->
+                <p style="margin-top: 15px;"></p>
+                <!-- 장바구니 버튼 영역 -->
+                 <a class="btn"
+                 href="cart.html">장바구니</a>
+                 <br>
+                <!-- 상품 설명 영역 -->
+                <b style="margin: 10px 0;">상품설명</b>
+                <br>
+                <b>원산지</b>
+                <p>한국</p>
+                <b>제조사/수입사</b>
+                <p>포켄스</p>
+                <b>유통기한</b>
+                <p>18개월 / 상세보기</p>
+                <b>본 상품에 유통기한 표기</b>
+                <p>년/월/일으로 표기 예) 2027.05.02 →2027년 05월 02일</p>
+                <b>권장연령</b>
+                <p>생후 3개월령 이상</p>
+                <b>용량/중량</b>
+                <p>680g</p>
+                <b>원료구성</b>
+                <p>타피오카, 감자, 고구마, 완두콩, 솔비톨, 글리세린, 젤라틴, 프락토올리고당, 아마씨분말, 효모추출물, 치킨오일, 정제어유, 가수분해단백질, 비타민B1라우릴황산염, 아세트산아연, 비타민믹스(A,C,E,B1,B2,B6,나이아신,엽산), 모노글리세라이드, 셀룰로오스검, 천연가금향, 향료</p>
+                <b>성분구성</b>
+                <p>조단백질 7.0%이상, 조지방 4.0%이상, 조섬유 1.0%이하, 조회분 1.5%이하, 칼슘 0.01%이상, 인 0.01%이상, 수분 14.0%이하</p>
+                <b>사이즈(가로)</b>
+                <p>9 cm</p>
+                <b>소비자상담전화번호</b>
+                <p>도그팡 고객센터 1588-3010</p>
+            </div>
+        </div>
+        <h2>상품평</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="\img\상품평1.png">
+                너무너무 좋아하는 치석껌♡ 진짜 환장해요. 부스럭소리나면 달려와서 봉투만 몰래 찍었네요ㅎ
+            </div>
+            <div class="card">
+                <img src="\img\상품평2.png">
+                항상 먹이는건데 도그팡 사은품줘서 처음사봐요ㅎㅎ잘받았습니다.
+            </div>
+            <div class="card">
+                <img src="\img\상품평3.png">
+                항상 먹이는건데 도그팡 사은품줘서 처음사봐요ㅎㅎ잘받았습니다.
+            </div>
+            <div class="card">
+                <img src="\img\상품평4.png">
+                아이가 커져서 좀더 큰 사이즈 구매했어요양치를 싫어하는 아이라서 치석제거에 좋다니 안심이네요ㅎ
+            </div>
+        </div>
+        <div class="review">
+            <br>Write a review...<br><textarea></textarea>
+        </div>
+    </div>
+   
+    <div class="footer">
+        Tail Market Demo Store
+    </div>
+</body>
+</html>
