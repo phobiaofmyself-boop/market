@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        header{
+            background-color: black;
+            color: white;
+            padding: 15px 40px;
+        }
+        .logo{
+            display: flex;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* .menu{
+            margin-left: 100px;
+        } */
+        .menu a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .hero{
+            background: beige;
+            padding: 60px;
+            text-align: center;
+            border-bottom: 1px solid#ddd;
+        }
+        .container{
+            width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .card{
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover{
+            transform: translateY(-3px)
+        }
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 14px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: auto;
+            align-self: flex-end;
+            border-radius: 4px;
+        }
+        .footer{
+            margin-top: 60px;
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 메뉴 260404 -->
+        <div class="nav">
+            <!-- 로고 260404 -->
+            <div class="logo">
+                <img src="\img\logo.png" width = "100px">
+                </div>
+                <!-- 내비 영역 메뉴 -->
+                <div class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="category.html">Category</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="login.html">Login</a>
+                </div>
+            
+        </div>
+    </header>
+
+    <!-- 배너 260404 -->
+    <section class="hero">
+        <h1>꼬리마켓 Big Event</h1>
+        <p>모든 품목 20% 추가 할인!</p>
+    </section>
+    
+    <div class="container mt-3">
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th><a class="btn" href="products.html">전체 상품</a></th>
+        <th><a class="btn" href="products (2).html">사료</a></th>
+        <th><a class="btn" href="products (3).html">장난감</a></th>
+        <th><a class="btn" href="products (4).html">매트</a></th>
+        <th><a class="btn" href="products (5).html">스프레이</a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+    <div class="container">
+        <h2 style="margin-bottom:20px;">상품 항목</h2>
+
+        <!-- 추천 상품 항목 260404 -->
+        <div class="grid">
+            <div class="card">
+                <img src="\img\애견용품 (3).png">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="product (3).html">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="\img\애견용품 (7).png">
+                <div class="card-body">
+                    <h3></h3>
+                    <p class="price"></p>
+                    <a class="btn" href="product (7).html">View</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Tail Market Demo Store
+    </div>
+</body>
+</html>
